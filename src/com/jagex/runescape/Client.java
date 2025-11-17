@@ -10050,7 +10050,7 @@ public final class Client extends RSApplet {
             }
             final int x = stream.readBits(7);
             final int y = stream.readBits(7);
-            localPlayer.setPos(y, x, clearWaypointQueue == 1);
+            localPlayer.setPos(x, y, clearWaypointQueue == 1);
         }
     }
 
