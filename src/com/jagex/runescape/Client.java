@@ -10048,8 +10048,9 @@ public final class Client extends RSApplet {
             if (updateRequired == 1) {
                 this.playersObserved[this.playersObservedCount++] = this.LOCAL_PLAYER_ID;
             }
-            final int x = stream.readBits(7);
+
             final int y = stream.readBits(7);
+            final int x = stream.readBits(7);
             localPlayer.setPos(x, y, clearWaypointQueue == 1);
         }
     }
